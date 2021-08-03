@@ -11,10 +11,9 @@ This is just a brief introduction if you are from other Javascript framework. If
 ## Other resources & community
 
 ### Resources
-* [5 Ways SolidJS Differs from Other JS Frameworks](https://dev.to/ryansolid/5-ways-solidjs-differs-from-other-js-frameworks-1g63)
-* [Why SolidJS: Do we need another JS UI Library?](https://dev.to/ryansolid/why-solidjs-do-we-need-another-js-ui-library-1mdc)
-* [SolidJS Official Release: The long road to 1.0](https://dev.to/ryansolid/solidjs-official-release-the-long-road-to-1-0-4ldd)
-* [5 Places SolidJS is not the Best](https://dev.to/this-is-learning/5-places-solidjs-is-not-the-best-5019)
+* [Official Website](https://www.solidjs.com)
+* [Github Repository](https://github.com/solidjs/solid)
+* [Awesome Solid.js](https://github.com/one-aalam/awesome-solid-js)
 
 ### Community
 * [Solid Discord (Official)](https://discord.com/invite/solidjs)
