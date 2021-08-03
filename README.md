@@ -4,6 +4,7 @@ Solid is a purely reactive library. It was designed from the ground up with a re
 
 This is just a brief introduction if you are from other Javascript framework. If you want to learn Solid from scratch, I recommend by doing the [Tutorial](https://www.solidjs.com/tutorial/) from the official Solid website.
 
+### [React](./React.md)
 ### [Vue](./Vue.md)
 ### [Svelte](./Svelte.md)
 
