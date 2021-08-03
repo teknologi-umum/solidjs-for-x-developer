@@ -1,5 +1,7 @@
 # Solid for Svelte developer
 
+There is [an article on the documentation](https://www.solidjs.com/docs/latest/api#svelte) comparing Svelte to Solid.
+
 ## Table of contents
 * [Templates](#templates)
   * [Template strings](#template-strings)

@@ -1,5 +1,7 @@
 # Solid for Vue developer
 
+There is [an article on the documentation](https://www.solidjs.com/docs/latest/api#vue) comparing Vue to Solid.
+
 ## Table of contents
 * [Templates](#templates)
   * [Template strings](#template-strings)

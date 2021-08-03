@@ -1,6 +1,6 @@
 # Solid for React developer
 
-It's pretty much the same thing. Here we'll cover some of the control flow available on Solid.
+It's pretty much the same thing. Here we'll cover some of the control flow available on Solid. There is [an article on the documentation](https://www.solidjs.com/docs/latest/api#react) comparing React to Solid.
 
 ## Table of contents
 * [What's changed?](#whats-changed-)
