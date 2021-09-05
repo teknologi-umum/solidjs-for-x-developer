@@ -72,7 +72,7 @@ You could still use `ingredients.map()` like you'd do on React, but it's less op
 ```jsx
 import { For } from 'solid-js'
 
-export default function Recipe(props.) {
+export default function Recipe(props) {
   return (
     <ul>
       <For each={props.ingredients}>
