@@ -2,6 +2,8 @@
 
 The biggest different is on reactive handling. In React, every change is handled by the reconciler that runs periodically. Whereas in Solid, only reactive changes will lead to re-rendering, which is great for performance and allows a good level of control - however, using `Array.map` will only ever run initially. If the contents of the array changed, you'd either need `mapArray` or `For`. 
 
+Also, you can't destructure `props` in Solid because it will lose its reactivity. You can see it in [this codesandbox](https://codesandbox.io/s/trusting-jasper-ltzxi?file=/src/main.tsx).
+
 Other than that, it's pretty much the same thing. Here we'll cover some of the control flow available on Solid. There is [an article on the documentation](https://www.solidjs.com/docs/latest/api#react) comparing React to Solid.
 
 ## Table of contents
@@ -37,9 +39,9 @@ export default function Awesome({ awesome }) {
 ```jsx
 import { Show } from 'solid-js' 
 
-export default function Awesome({ awesome }) {
+export default function Awesome(props) {
   return (
-    <Show when={awesome} fallback={<h1>Solid is still awesome, though.</h1>}>
+    <Show when={props.awesome} fallback={<h1>Solid is still awesome, though.</h1>}>
       <h1>Solid is awesome!</h1>
     </Show>
   )
@@ -70,10 +72,10 @@ You could still use `ingredients.map()` like you'd do on React, but it's less op
 ```jsx
 import { For } from 'solid-js'
 
-export default function Recipe({ ingredients }) {
+export default function Recipe(props) {
   return (
     <ul>
-      <For each={ingredients}>
+      <For each={props.ingredients}>
         {(ingredient, index) => (
           <li>{ingredient}</li>
         )}

@@ -57,9 +57,9 @@ export default function Greeter({ name }) {
 ```jsx
 import { Show } from 'solid-js' 
 
-export default function Awesome({ awesome }) {
+export default function Awesome(props) {
   return (
-    <Show when={awesome} fallback={<h1>Solid is still awesome, though.</h1>}>
+    <Show when={props.awesome} fallback={<h1>Solid is still awesome, though.</h1>}>
       <h1>Solid is awesome!</h1>
     </Show>
   )
@@ -87,9 +87,9 @@ export default function Awesome({ awesome }) {
 ```jsx
 import { For } from 'solid-js'
 
-export default function Recipe({ ingredients }) {
+export default function Recipe(props) {
   return (
-    <For each={ingredients}>
+    <For each={props.ingredients}>
       {(ingredient, index) => (
         {ingredient}
       )}
@@ -115,10 +115,10 @@ export default function Recipe({ ingredients }) {
 
 **Solid**
 ```jsx
-export default function Post({ title, description }) {
+export default function Post(props) {
   return (
-    <h1>{title}</h1>
-    <description text={description}></description>
+    <h1>{props.title}</h1>
+    <description text={props.description}></description>
   )
 }
 ```
@@ -210,13 +210,13 @@ export default function Profile() {
 
 **Solid**
 ```jsx
-export default function PostForm({ save, publish }) {
+export default function PostForm(props) {
   return (
     <form>
-      <button type="button" onClick={save()}>
+      <button type="button" onClick={props.save()}>
         Save
       </button>
-      <button type="button" onClick={publish()}>
+      <button type="button" onClick={props.publish()}>
         Publish
       </button>
     </form>
