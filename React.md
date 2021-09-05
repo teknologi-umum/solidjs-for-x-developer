@@ -2,7 +2,7 @@
 
 The biggest different is on reactive handling. In React, every change is handled by the reconciler that runs periodically. Whereas in Solid, only reactive changes will lead to re-rendering, which is great for performance and allows a good level of control - however, using `Array.map` will only ever run initially. If the contents of the array changed, you'd either need `mapArray` or `For`. 
 
-Also, you can't destructure `props` in Solid because it will lose reactivity. You can see it [this codesandbox](https://codesandbox.io/s/trusting-jasper-ltzxi?file=/src/main.tsx).
+Also, you can't destructure `props` in Solid because it will lose its reactivity. You can see it in [this codesandbox](https://codesandbox.io/s/trusting-jasper-ltzxi?file=/src/main.tsx).
 
 Other than that, it's pretty much the same thing. Here we'll cover some of the control flow available on Solid. There is [an article on the documentation](https://www.solidjs.com/docs/latest/api#react) comparing React to Solid.
 
